@@ -15,6 +15,7 @@ public class Consumer implements Runnable {
            synchronized (obj){
                if(total>=1){
                    try {
+
                        int sleepTime =  new Random().nextInt(10)+1;
                        Thread.sleep(sleepTime);
                        System.out.println("程序休眠了"+sleepTime+"毫秒！");
